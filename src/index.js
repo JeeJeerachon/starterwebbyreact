@@ -3,10 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <App />
+);
+
+const navbar = ReactDOM.createRoot(document.getElementById('navbar'));
+navbar.render(
+    <Navbar />
+);
+
+const footer = ReactDOM.createRoot(document.getElementById('footer'));
+footer.render(
+    <Footer />
 );
 
 // If you want to start measuring performance in your app, pass a function
