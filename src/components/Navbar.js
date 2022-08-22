@@ -1,4 +1,5 @@
-function Navbar() {
+const Navbar=(att)=>{
+  
   return (
     <div className="Navbar">
       <header>
@@ -21,23 +22,28 @@ function Navbar() {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item mx-md-2 mx-lg-2 mx-xl-4 mx-xxl-4">
-                  <a class="nav-link active" href="/">
+                  <a class={att.class} href={att.at}>
                     Home
                   </a>
                 </li>
                 <li class="nav-item mx-md-2 mx-lg-2 mx-xl-4 mx-xxl-4">
-                  <a class="nav-link " href="">
-                    Services
+                  <a class="nav-link " href="" >
+                    Features
                   </a>
                 </li>
                 <li class="nav-item mx-md-2 mx-lg-2 mx-xl-4 mx-xxl-4">
                   <a class="nav-link " href="">
-                    Download
+                    Pricing
                   </a>
                 </li>
                 <li class="nav-item mx-md-2 mx-lg-2 mx-xl-4 mx-xxl-4">
                   <a class="nav-link " href="">
-                    Contact Us
+                    FAQs
+                  </a>
+                </li>
+                <li class="nav-item mx-md-2 mx-lg-2 mx-xl-4 mx-xxl-4">
+                  <a class="nav-link " href="">
+                    About
                   </a>
                 </li>
               </ul>

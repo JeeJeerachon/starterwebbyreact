@@ -1,10 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
+    
     <div className="App">
       <body>
+        <Navbar class="nav-link active" al="/"/>
         <div class="p-4 p-md-5 mb-4 text-bg-dark">
           <div class="container text-white heroheading-container">
             <h1 class="display-4">We thrive for uniqueness.</h1>
@@ -170,7 +174,7 @@ function App() {
           </div>
         </div>
       </body>
-      
+      <Footer/>
     </div>
   );
 }
